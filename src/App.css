@@ -1,0 +1,60 @@
+.App {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: lightskyblue;
+    height: 100vh;
+}
+
+.Title {
+    position: absolute;
+    top: 80px;
+    font-size: 5rem;
+    text-shadow: 5px 5px 3px gray;
+}
+
+.List {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px 5px;
+    overflow: auto;
+    position: absolute;
+    top: 250px;
+    width: 70%; height: 40%;
+    background-color: white;
+    border-radius: 1rem 0.5rem 0.5rem 1rem;
+    border: 3px solid gray;
+    box-shadow: 0px 0px 5px gray;
+}
+
+/* 스크롤바 스타일링 */
+.List::-webkit-scrollbar {
+    width: 0.5vw; /* 스크롤바 너비 */
+}
+
+.List::-webkit-scrollbar-track {
+    background: transparent; /* 스크롤바 배경 */
+    border-radius: 0.5rem; /* 둥근 배경 */
+}
+
+.List::-webkit-scrollbar-thumb {
+    background: hsla(0, 0%, 42%, 0.29); /* 스크롤바 손잡이 색상 */
+    opacity: 50%;
+    border-radius: 0.5rem; /* 손잡이를 둥글게 */
+}
+
+.List::-webkit-scrollbar-thumb:hover {
+    background: #555; /* 손잡이 hover 효과 */
+}
+
+.Link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid gray;
+    margin-left: 5px; margin-right: 5px;
+}
