@@ -28,18 +28,20 @@
 #dec, #res, #inc {
     display: inline-block;
     margin-right: 1rem; margin-left: 1rem;
+    font-size: 1.25rem;
+    border: 0.1rem solid darkgrey;
+    border-radius: 0.5rem;
+    background-color: darkgrey;
+    transition: color 0.3s, border-color 0.3s;
+    padding: 0.5rem;
 }
 
-#dec{
-
+#dec:hover {
+    color: lightskyblue;
+    border-color: lightskyblue;
 }
 
-
-#res{
-
+#inc:hover {
+    color: lightcoral;
+    border-color: lightcoral;
 }
-
-#inc{
-
-}
-
