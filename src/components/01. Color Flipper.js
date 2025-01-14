@@ -8,7 +8,7 @@ function ColorFlipper() {
 
     console.log(changeColor);
 
-    const [Color, setColor] = useState('white');
+    const [Color, setColor] = useState();
 
     return (
         <div className="colorflipper" style={{backgroundColor: Color}}>
@@ -16,7 +16,7 @@ function ColorFlipper() {
                 <h1 className="left">Color Flipper</h1>
                 <h1 className="right"> Simple Hex</h1>
             </div>
-            <h1 className="colorName">Background Color: {changeColor}</h1>
+            <h1 className="colorName">Background Color: {Color}</h1>
             <button className="button" style={{backgroundColor: Color}} onClick={() => {
                 setColor(changeColor)}}> CLICK ME </button>
         </div>
