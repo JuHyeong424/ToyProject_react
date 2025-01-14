@@ -12,13 +12,13 @@ function Counter() {
             <div id="buttonList">
                 <button id="dec" onClick={()=>{
                     setCount(count - 1);
-                }}>D E C R E A S E</button>
+                }}> D E C R E A S E </button>
                 <button id="res" onClick={()=>{
                     setCount(0);
-                }}>R E S E T</button>
+                }}> R E S E T </button>
                 <button id="inc" onClick={()=>{
                     setCount(count + 1);
-                }}>I N C R E A S E</button>
+                }}> I N C R E A S E </button>
             </div>
         </div>
     );
