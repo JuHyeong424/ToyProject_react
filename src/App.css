@@ -1,4 +1,4 @@
-.App {
+#App {
     position: relative;
     display: flex;
     justify-content: center;
@@ -9,14 +9,14 @@
     text-decoration: none;
 }
 
-.Title {
+#Title {
     position: absolute;
     top: 20px;
     font-size: 5rem;
     text-shadow: 5px 5px 3px gray;
 }
 
-.List {
+#List {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -33,26 +33,26 @@
 }
 
 /* 스크롤바 스타일링 */
-.List::-webkit-scrollbar {
+#List::-webkit-scrollbar {
     width: 0.5vw; /* 스크롤바 너비 */
 }
 
-.List::-webkit-scrollbar-track {
+#List::-webkit-scrollbar-track {
     background: transparent; /* 스크롤바 배경 */
     border-radius: 0.5rem; /* 둥근 배경 */
 }
 
-.List::-webkit-scrollbar-thumb {
+#List::-webkit-scrollbar-thumb {
     background: hsla(0, 0%, 42%, 0.29); /* 스크롤바 손잡이 색상 */
     opacity: 50%;
     border-radius: 0.5rem; /* 손잡이를 둥글게 */
 }
 
-.List::-webkit-scrollbar-thumb:hover {
+#List::-webkit-scrollbar-thumb:hover {
     background: #555; /* 손잡이 hover 효과 */
 }
 
-.Link {
+#Link {
     display: flex;
     justify-content: center;
     align-items: center;

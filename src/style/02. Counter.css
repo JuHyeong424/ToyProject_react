@@ -1,0 +1,45 @@
+#counter {
+    position: absolute;
+    width: 70%; height: 70%;
+    top: 12.5rem; right:25%;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; /* 경계 포함 크기 계산 */
+    background-color: white;
+}
+
+#title {
+    text-align: center;
+    margin-top: 6rem; margin-bottom: 1rem;
+    font-size: 5rem;
+}
+
+#num {
+    text-align: center;
+    font-size: 4rem;
+}
+
+#buttonList {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+#dec, #res, #inc {
+    display: inline-block;
+    margin-right: 1rem; margin-left: 1rem;
+}
+
+#dec{
+
+}
+
+
+#res{
+
+}
+
+#inc{
+
+}
+
