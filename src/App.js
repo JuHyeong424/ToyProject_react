@@ -6,16 +6,18 @@ function App() {
   return (
       <div className="App">
           <h1 className="Title">PROJECT</h1>
-          <div className="List">
-              <h2 className="Link"><Link to="/ColorFlipper">ColorFlipper</Link></h2>
+
+          <ol className="List">
+              <li className="Link"><Link to="/ColorFlipper">ColorFlipper</Link></li>
 
 
-          </div>
+          </ol>
+
 
           <Routes>
               <Route path="/ColorFlipper" element={<ColorFlipper/>}></Route>
           </Routes>
-    </div>
+      </div>
   );
 }
 
