@@ -1,4 +1,4 @@
-.colorflipper {
+#colorflipper {
     position: absolute;
     width: 70%; height: 70%;
     top: 12.5rem; right:25%;
@@ -9,7 +9,7 @@
     background-color: white;
 }
 
-.header {
+#header {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -18,17 +18,17 @@
     box-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.5);
 }
 
-.left, .right {
+#left, #right {
     flex: 1;  /* 균등한 공간 분배 */
     text-align: center;
 }
 
-.left {
+#left {
     color: chartreuse;
     border-right: 0.0625rem solid gray;
 }
 
-.colorName {
+#colorName {
     text-align: center;
     margin-top: 7rem;
     background-color: black;
@@ -40,7 +40,7 @@
     border-radius: 2rem;
 }
 
-.button {
+#button {
     display: block;
     width: 10rem; height: 3rem;
     margin: 0 auto;

@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import colorFlipper from '../style/01. Color Flipper.module.css';
+import 'C:/Users/asdf/Front-project/toyproject_react/src/style/01_ Color Flipper.css';
 
 
 function ColorFlipper() {
@@ -9,13 +9,13 @@ function ColorFlipper() {
     const [Color, setColor] = useState();
 
     return (
-        <div className={colorFlipper.colorflipper} style={{backgroundColor: Color}}>
-            <div className={colorFlipper.header}>
-                <h1 className={colorFlipper.left}>Color Flipper</h1>
-                <h1 className={colorFlipper.right}> Simple Hex</h1>
+        <div id="colorflipper" style={{backgroundColor: Color}}>
+            <div id="header">
+                <h1 id="left">Color Flipper</h1>
+                <h1 id="right"> Simple Hex</h1>
             </div>
-            <h1 className={colorFlipper.colorName}>Background Color: {Color}</h1>
-            <button className={colorFlipper.button} style={{backgroundColor: Color}} onClick={() => {
+            <h1 id="colorName">Background Color: {Color}</h1>
+            <button id="button" style={{backgroundColor: Color}} onClick={() => {
                 setColor(changeColor)}}> CLICK ME </button>
         </div>
     )

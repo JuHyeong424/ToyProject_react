@@ -1,0 +1,40 @@
+#review, .review_add, .review_detail {
+    position: absolute;
+    width: 70%; height: 70%;
+    top: 12.5rem; right:25%;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; /* 경계 포함 크기 계산 */
+    background-color: white;
+}
+
+#reviews {
+    text-align: center;
+}
+
+#review_board {
+    text-align: center;
+    border: 1px solid gray;
+    width: 80%;
+}
+
+#review_title {
+
+}
+
+#review_content {
+    border: 1px solid gray;
+}
+
+#review_이전 {
+
+}
+
+#review_다음 {
+
+}
+
+#review_btn {
+
+}
