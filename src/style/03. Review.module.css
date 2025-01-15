@@ -1,0 +1,10 @@
+.review {
+    position: absolute;
+    width: 70%; height: 70%;
+    top: 12.5rem; right:25%;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; /* 경계 포함 크기 계산 */
+    background-color: white;
+}

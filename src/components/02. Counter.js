@@ -1,22 +1,22 @@
 import React, {useState} from "react";
-import 'C:/Users/asdf/Front-project/toyproject_react/src/style/02. Counter.css';
+import styles from '../style/02. Counter.module.css';
 
 function Counter() {
 
     const [count, setCount] = useState(0);
 
     return (
-        <div id="counter">
-            <h1 id="title">Counter</h1>
-            <div id="num" style={{color: count < 0 ? 'blue' : count > 0 ? 'red' : 'black'}}>{count}</div>
-            <div id="buttonList">
-                <button id="dec" onClick={()=>{
+        <div className={styles.counter}>
+            <h1 className = {styles.title}>Counter</h1>
+            <div className={styles.num} style={{color: count < 0 ? 'blue' : count > 0 ? 'red' : 'black'}}>{count}</div>
+            <div className={styles.buttonList}>
+                <button className={styles.dec} onClick={()=>{
                     setCount(count - 1);
                 }}> D E C R E A S E </button>
-                <button id="res" onClick={()=>{
+                <button className={styles.res} onClick={()=>{
                     setCount(0);
                 }}> R E S E T </button>
-                <button id="inc" onClick={()=>{
+                <button className={styles.inc} onClick={()=>{
                     setCount(count + 1);
                 }}> I N C R E A S E </button>
             </div>
