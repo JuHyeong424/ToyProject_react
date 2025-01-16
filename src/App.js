@@ -7,6 +7,7 @@ import Review_add from "./components/03. Review/Review_add";
 import Review_detail from "./components/03. Review/Review_detail";
 
 function App() {
+
     return (
         <div id="App">
             <h1 id="Title">PROJECT</h1>
@@ -18,13 +19,12 @@ function App() {
 
             </ol>
 
-
             <Routes>
                 <Route path="/ColorFlipper" element={<ColorFlipper/>}></Route>
                 <Route path="/Counter" element={<Counter/>}></Route>
                 <Route path="/Review" element={<Review/>}></Route>
                 <Route path="/review_add" element={<Review_add/>}></Route>
-                <Route path="/review_detail" element={<Review_detail/>}></Route>
+                <Route path="/review_detail/:id" element={<Review_detail/>} />
             </Routes>
         </div>
     );
